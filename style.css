@@ -1,0 +1,52 @@
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  color: White; 
+}
+
+/* Background Colors  */ 
+progress,                          /* Firefox  */ 
+progress[role][aria-valuenow] {    /* Polyfill */
+  /* RESETS */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: #CCC; /* !important is needed by the polyfill */ 
+  width: 240px;
+  height: 1px;
+}
+
+/* Chrome */
+progress::-webkit-progress-bar {
+  background: #CCC;
+}
+
+/* Foreground Colors   */ 
+/* IE10 */
+progress {
+  color: White;
+}
+
+/* Firefox */
+progress::-moz-progress-bar { 
+  background: White;   
+}
+
+/* Chrome */
+progress::-webkit-progress-value {
+  background: White;
+}
+
+/* Polyfill */
+progress[aria-valuenow]:before  {
+  background: White;
+}
+
+/* MICROSOFT EDGE ANNOYING VERTICAL LINE AT END OF VALUE */
+progress::-ms-fill {
+  border-color: currentColor;
+}
