@@ -7,10 +7,13 @@ Team Voodoo (https://planetvoodoo.org)
 
 
 Step 1:
-Include the CSS somewhere in your document <head></head> section.
+Include the CSS somewhere in your document <head> section.
 
 Step 2:
-Add the JavaScript somewhere in your document <head></head> section.
+Add the JavaScript somewhere in your document <head> section.
 
 Step 3:
 Add the HTML to the top of your <body> section.
+
+
+Many examples and spin-offs of this code can be found at our website https://planetvoodoo.org.
