@@ -2,18 +2,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
 	var scene = document.querySelector('a-scene');
 	var pvloader = document.querySelector('#pvloader');
-	var model = document.querySelector('#your-model');
+	var model1 = document.querySelector('#your-model-1');
+	var model2 = document.querySelector('#your-model-2');
 	
 	// HTML5 LOADER
 	window.onload = function() {
 		
-    		// ADD VALUE TO BAR ONCE SCENE IS LOADED
-		scene.addEventListener('loaded', function() {
+    		// ADD VALUE TO BAR ONCE A MODEL IS LOADED
+		model1.addEventListener('model-loaded', function() {
 			pvloader.value += 50;
 		});
-
+		
     		// ADD VALUE TO BAR ONCE A MODEL IS LOADED
-		model.addEventListener('model-loaded', function() {
+		model2.addEventListener('model-loaded', function() {
 			pvloader.value += 50;
 		});
 		
