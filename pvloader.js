@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
-	var scene = document.querySelector('a-scene');
+
+	// SET YOUR VARIABLES
 	var pvloader = document.querySelector('#pvloader');
 	var model1 = document.querySelector('#your-model-1');
 	var model2 = document.querySelector('#your-model-2');
@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			pvloader.value += 50;
 		});
 		
+		// HIDE WHEN PROGRESS TOTAL = 100%
 		function start() {
 			loading.style.opacity = '0';
 			loading.style.display = 'none';
